@@ -1,0 +1,35 @@
+.layout {
+    width: 90%;
+}
+.title_bar {
+    display: block;
+}
+.roll {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.roll img {
+    width: 20px;
+    height: 20px;
+}
+.title{
+    display: inline-block;
+}
+.search_box {
+    display: inline-block;
+}
+.style {
+    display: block;
+}
+.sort_box {
+    display: inline-block;
+}
+.view_style {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+}
+.movies {
+    display: block;
+}
