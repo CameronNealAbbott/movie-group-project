@@ -41,14 +41,19 @@
     border: 1px solid gray;
     background-color: lightyellow;
     margin-bottom: 10px;
+    padding: 10px;
 }
 .sort_box {
     display: inline-block;
-    margin-left: 10px;
 }
 .view_style {
     display: inline-block;
     float: right;
+}
+.icon {
+    width: 25px;
+    height: 20px;
+    margin-left: -4px;
 }
 .movies_layout {
     display: block;
