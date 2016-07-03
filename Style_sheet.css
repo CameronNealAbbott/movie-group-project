@@ -1,35 +1,111 @@
 .layout {
     width: 90%;
 }
+@font-face {
+    font-family: Oleo;
+    src: url(Oleo.woff);
+}
 .title_bar {
     display: block;
+    border: 1px solid gray;
+    background-color: lightyellow;
+    margin-bottom: 10px;
 }
 .roll {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 .roll img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 .title{
     display: inline-block;
+    font-weight: bold;
+    font-family: Oleo;
 }
 .search_box {
     display: inline-block;
+    margin-left: 20px;
+}
+.search_button {
+    display: inline-block;
+    color: white;
+    background-color: cornflowerblue;
+    text-align: center;
+    border: 1px solid gray;
 }
 .style {
     display: block;
+    border: 1px solid gray;
+    background-color: lightyellow;
+    margin-bottom: 10px;
 }
 .sort_box {
     display: inline-block;
+    margin-left: 10px;
 }
 .view_style {
     display: inline-block;
-    position: absolute;
-    right: 50px;
+    float: right;
 }
-.movies {
+.movies_layout {
     display: block;
+    border: 1px solid gray;
+}
+.photo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid lightgray;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.photo img {
+    width: 189px;
+    height: 189px;
+    padding: 5px;
+}
+.name {
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+}
+.starring {
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    font-size: 15px;
+    text-align: left;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+    color: transparent;
+    background-color: transparent;
+}
+.photo:hover {
+    cursor: pointer;
+}
+.photo:hover .name {
+    height: 120px;
+    background-color: rgba(0,0,0,0.6)
+}
+.photo:hover .starring {
+    color:white;
+    background-color:rgba(0,0,0,0.7);
 }
