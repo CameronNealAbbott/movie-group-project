@@ -3,8 +3,21 @@
 }
 @font-face {
     font-family: Oleo;
-    src: url(Oleo.woff);
+    src: url(fonts/Oleo.woff);
 }
+/*The unspeakables*/
+.description{
+    visibility: hidden;
+}
+.rating{
+    visibility: hidden;
+}
+.HD{
+    visibility: hidden;
+}
+/*end the Unspeakables*/
+
+/*RENT A MOVIE*/
 .title_bar {
     display: block;
     border: 1px solid gray;
@@ -36,6 +49,8 @@
     text-align: center;
     border: 1px solid gray;
 }
+
+/*Sort By:*/
 .style {
     display: block;
     border: 1px solid gray;
@@ -58,8 +73,10 @@
 .movies_layout {
     display: block;
     border: 1px solid gray;
+    
 }
 .photo {
+    float:left;
     position: relative;
     width: 200px;
     height: 200px;
@@ -72,7 +89,7 @@
     height: 189px;
     padding: 5px;
 }
-.name {
+.name{
     position:absolute;
     bottom: 5px;
     left: 5px;
@@ -88,6 +105,38 @@
     -moz-transition: 1s; /* For Firefox*/
     -o-transition:1s; /* For Opera*/
 }
+.name{
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+}
+.date{
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 25px;
+    width:189px;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+}
+
 .starring {
     position:absolute;
     bottom: 5px;
@@ -109,6 +158,9 @@
 .photo:hover .name {
     height: 120px;
     background-color: rgba(0,0,0,0.6)
+}
+.photo:hover .date {
+    height: 105px;
 }
 .photo:hover .starring {
     color:white;

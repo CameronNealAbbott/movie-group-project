@@ -9,8 +9,46 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style_sheet.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script id="photo-template" type="text/html">
+        <div class='photo'>
+            <img src='{{photo}}'>
+            <div class='name'>{{title}}</div>
+            <div class='date'>({{year}})</div>    
+            <div class='starring'>{{starring}}</div>
+            <div class='HD'>{{HD}}</div>    
+            <div class='description'>{{description}}</div>
+            <div class='rating'>{{rating}}</div>
+        </div>
+        </script>
+        <script src="data/movies.js"></script>
+        <script src="scripts/htmlMaker.js"></script>
+        <script src="scripts/iteration.js"></script>
+        <script src="scripts/photos.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="layout">
+            <div class="title_bar">
+                <div class="roll"><img name="Rolls" alt="Rolls" src="images\movie.png"></div>
+                <div class="title">RENT A MOVIE</div>
+                <div class="search_box">"Search box"</div>
+                <div class="search_button">Search</div>
+            </div>
+            <div class="style">
+                <div class="sort_box">Sort By: "Sort box"</div>
+                <div class="view_style">
+                    <img class="icon" title="Grid View" alt="Grid View" src="images\grid.jpg">
+                    <img class="icon" title="List View" alt="List View" src="images\list.jpg">
+                </div>
+            </div>
+            <div class="movies_layout">
+                <div id="photos" class="grid">
+                </div>
+            </div>
+            
+        </div>
+        
+        
     </body>
 </html>
