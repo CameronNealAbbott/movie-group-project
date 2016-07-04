@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var controller = new Controller(images["images"]);
+    var controller = new Controller(movies["movies"]);
     
 });
 
@@ -64,14 +64,15 @@ Controller.prototype.sort_photos=function(){
 
 Controller.prototype.make_grid = function () {
     $(this.photos_div).attr("class", "grid");
-    $(this.grid_icon).attr("src", "grid_pressed.jpg");
-    $(this.list_icon).attr("src", "list.jpg");
+    $(this.grid_icon).attr("src", "images/grid_pressed.jpg");
+    $(this.list_icon).attr("src", "images/list.jpg");
+    console.log("hello");
 };
 
 Controller.prototype.make_list = function () {
     $(this.photos_div).attr("class", "list");
-    $(this.grid_icon).attr("src", "grid.jpg");
-    $(this.list_icon).attr("src", "list_pressed.jpg");
+    $(this.grid_icon).attr("src", "images/grid.jpg");
+    $(this.list_icon).attr("src", "images/list_pressed.jpg");
 };
 
 

@@ -65,17 +65,27 @@
     display: inline-block;
     float: right;
 }
-.icon {
+
+
+.view_style img:hover{
+    cursor:pointer;
+}
+
+
+.list_icon, .grid_icon {
     width: 25px;
     height: 20px;
     margin-left: -4px;
 }
-.movies_layout {
+
+/* GRID STYLE
+~GRIDDLER (Mc'Grid'ul')*/
+.grid .movies_layout {
     display: block;
     border: 1px solid gray;
     
 }
-.photo {
+.grid .photo {
     float:left;
     position: relative;
     width: 200px;
@@ -84,12 +94,12 @@
     margin-left: 30px;
     margin-top: 30px;
 }
-.photo img {
+.grid .photo img {
     width: 189px;
     height: 189px;
     padding: 5px;
 }
-.name{
+.grid .name{
     position:absolute;
     bottom: 5px;
     left: 5px;
@@ -105,7 +115,7 @@
     -moz-transition: 1s; /* For Firefox*/
     -o-transition:1s; /* For Opera*/
 }
-.name{
+.grid .name{
     position:absolute;
     bottom: 5px;
     left: 5px;
@@ -121,7 +131,7 @@
     -moz-transition: 1s; /* For Firefox*/
     -o-transition:1s; /* For Opera*/
 }
-.date{
+.grid .date{
     position:absolute;
     bottom: 5px;
     left: 5px;
@@ -137,7 +147,7 @@
     -o-transition:1s; /* For Opera*/
 }
 
-.starring {
+.grid .starring {
     position:absolute;
     bottom: 5px;
     left: 5px;
@@ -152,17 +162,116 @@
     color: transparent;
     background-color: transparent;
 }
-.photo:hover {
+.grid .photo:hover {
     cursor: pointer;
 }
-.photo:hover .name {
+.grid .photo:hover .name {
     height: 120px;
     background-color: rgba(0,0,0,0.6)
 }
-.photo:hover .date {
+.grid .photo:hover .date {
     height: 105px;
 }
-.photo:hover .starring {
+.grid .photo:hover .starring {
+    color:white;
+    background-color:rgba(0,0,0,0.7);
+}
+
+/*LIST STYLE
+&^~Listler (LISTERINE)*/
+.list .movies_layout {
+    display: block;
+    border: 1px solid gray;
+    
+}
+.list .photo {
+    float:left;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid lightgray;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.list .photo img {
+    width: 189px;
+    height: 189px;
+    padding: 5px;
+}
+.list .name{
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+}
+.list .name{
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+}
+.list .date{
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 25px;
+    width:189px;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+}
+
+.list .starring {
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    font-size: 15px;
+    text-align: left;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+    color: transparent;
+    background-color: transparent;
+}
+.list .photo:hover {
+    cursor: pointer;
+}
+.list .photo:hover .name {
+    height: 120px;
+    background-color: rgba(0,0,0,0.6)
+}
+.list .photo:hover .date {
+    height: 105px;
+}
+.list .photo:hover .starring {
     color:white;
     background-color:rgba(0,0,0,0.7);
 }
