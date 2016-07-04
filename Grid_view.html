@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style_sheet.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="search_box.js"></script>
+        <script src="search_specific.js"></script>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="title_bar">
+                <div class="roll"><img name="Rolls" alt="Rolls" src="data\movie.png"></div>
+                <div class="title">RENT A MOVIE</div>
+                <div class="search_box">
+                    <input class="text" id="field" type="text">
+                    <button class="search_button" id="search_button">Search</button>
+                    <div id="suggestions_box" class="suggestions"></div>
+                </div>
+                
+            </div>
+            <div class="style">
+                <div class="sort_box">Sort By: "Sort box"</div>
+                <div class="view_style">
+                    <img id="grid" class="icon" title="Grid View" alt="Grid View" src="data\grid.jpg">
+                    <img id="list" class="icon" title="List View" alt="List View" src="data\list.jpg">
+                </div>
+            </div>
+            <div class="movies_layout" id="body"></div>
+        </div>
+    </body>
+</html>

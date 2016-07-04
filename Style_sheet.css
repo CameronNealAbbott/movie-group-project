@@ -1,0 +1,144 @@
+.layout {
+    width: 90%;
+}
+@font-face {
+    font-family: Oleo;
+    src: url(Oleo.woff);
+}
+.title_bar {
+    display: block;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+.roll {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.roll img {
+    width: 40px;
+    height: 40px;
+}
+.title{
+    display: inline-block;
+    font-weight: bold;
+    font-family: Oleo;
+}
+.search_box {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+.style {
+    display: block;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.sort_box {
+    display: inline-block;
+}
+.view_style {
+    display: inline-block;
+    float: right;
+}
+.icon {
+    width: 25px;
+    height: 20px;
+    margin-left: -4px;
+}
+.movies_layout {
+    display: block;
+}
+.photo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid lightgray;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.photo img {
+    width: 189px;
+    height: 189px;
+    padding: 5px;
+}
+.name {
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+}
+.starring {
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width:189px;
+    font-size: 15px;
+    text-align: left;
+    transition: 1s; /*Standard, IE 10*/
+    -webkit-transition: 1s; /* For Chrome, Safari*/
+    -moz-transition: 1s; /* For Firefox*/
+    -o-transition:1s; /* For Opera*/
+    color: transparent;
+    background-color: transparent;
+}
+.photo:hover {
+    cursor: pointer;
+}
+.photo:hover .name {
+    height: 120px;
+    background-color: rgba(0,0,0,0.6)
+}
+.photo:hover .starring {
+    color:white;
+    background-color:rgba(0,0,0,0.7);
+}
+input.text{
+    color:black;
+    border-width:1px;
+    border-color: blue;
+    border-style: solid;
+    width: 470px;
+    height: 20px;
+}
+.search_button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-left: -20px;
+}
+.search_button:hover{
+    cursor: pointer;
+}
+.suggestions{
+    position:absolute;
+    z-index:50;
+    background-color:white;
+    width:470px;
+    height: 150px;
+    overflow: auto;
+    display:none;
+    border: 1px solid lightgray;
+}
+.sub_suggestions{
+    width:470px;
+    padding: 5px;
+    font-size: 15px;
+}
+.sub_suggestions:hover{
+    background-color:rgb(245,245,245);
+    cursor: pointer;
+}
